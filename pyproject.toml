@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "disco-problem"
+version = "0.1.0"
+description = ""
+authors = ["Nadie <hackerjef@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "disco_problem"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+betterdisco-py = {git = "https://github.com/elderlabs/BetterDisco.git", rev = "staging/dooley", extras = ["performance", "yaml"]}
+holster = {git = "https://github.com/elderlabs/holster.git"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
